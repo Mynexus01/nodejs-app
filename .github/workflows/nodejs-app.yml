@@ -5,7 +5,7 @@ on:
  push: 
    branches: 
       - app-service-deployment
->>>>>>> 5da5d4402c5d47827f32f492c8161ea1c1912e82
+
       
 jobs:
   build:
