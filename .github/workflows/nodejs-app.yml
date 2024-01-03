@@ -1,6 +1,6 @@
 name: Deploy to Azure App service
 
- on:
+on:
   push:
     branches:
       - nodejs-app
