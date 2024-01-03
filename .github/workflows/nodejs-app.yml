@@ -6,7 +6,7 @@ on:
       - nodejs-app
       
 jobs:
-  build-and-deploy:
+  build:
      runs-on: [ubuntu-latest]
      steps:
       - name: Checkout Source
