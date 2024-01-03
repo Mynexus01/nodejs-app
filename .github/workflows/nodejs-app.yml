@@ -1,9 +1,9 @@
 name: Deploy to Azure App service
 
-  \on:
-   push:
-    branches:
-      - nodejs-app
+on:
+ push: 
+   branches: 
+      - app-service-deployment
       
 jobs:
   build:
