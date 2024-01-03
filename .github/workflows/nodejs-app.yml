@@ -6,7 +6,7 @@ on:
       - nodejs-app
       
 jobs:
-  build and deploy:
+  build-and-deploy:
      runs-on: [ubuntu-latest]
      steps:
       - name: Checkout Source
@@ -21,8 +21,8 @@ jobs:
         run : npm install
         
       - name: Deploy to App Service
-        use: azure/webapps-deploy@v2
-      with:
-        app-name: Mynexus
-        publish-profile: $({secrets.AZURE_WEBAPP_PUBLISHED_PROFILE})  
-        package: .
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: Mynexus
+          publish-profile: $({secrets.AZURE_WEBAPP_PUBLISHED_PROFILE})  
+          package: .
