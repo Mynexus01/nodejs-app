@@ -2,9 +2,9 @@ name: Deploy to Azure App service
 
 
 on:
- push: 
-   branches: 
-      - app-service-deployment
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
 
       
 jobs:
