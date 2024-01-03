@@ -3,8 +3,8 @@ name: Deploy to Azure App service
 on:
   push:
     branches:
-       - nodejs-app
-    
+      - nodejs-app
+      
 jobs:
   build and deploy:
     runs-on: [ubuntu-latest]
